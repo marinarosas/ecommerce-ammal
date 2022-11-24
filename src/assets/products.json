@@ -1,0 +1,66 @@
+[
+    {
+        "id": 1,
+        "name": "Montblanc",
+        "rating": 4.5,
+        "price": 10600,
+        "imageUrl": "http://picsum.photos/seed/Montblanc/210/160",
+        "imageAlt": "Golden leather wrist watch"
+    },
+    {
+        "id": 2,
+        "name": "Orient",
+        "rating": 4.0,
+        "price": 160,
+        "imageUrl": "http://picsum.photos/seed/Orient/210/160",
+        "imageAlt": "Black and silver wrist watch"
+    },
+    {
+        "id": 3,
+        "name": "Rolex",
+        "rating": 4.5,
+        "price": 10975,
+        "imageUrl": "http://picsum.photos/seed/Rolex/210/160",
+        "imageAlt": "Rolex"
+    },
+    {
+        "id": 4,
+        "name": "Swarovski",
+        "rating": 3.0,
+        "price": 350,
+        "imageUrl": "http://picsum.photos/seed/Swarovski/210/160",
+        "imageAlt": "Swarovski"
+    },
+    {
+        "id": 5,
+        "name": "Seiko",
+        "rating": 4.5,
+        "price": 140,
+        "imageUrl": "http://picsum.photos/seed/Seiko/210/160",
+        "imageAlt": "Seiko"
+    },
+    {
+        "id": 6,
+        "name": "Apple Watch",
+        "rating": 4.5,
+        "price": 500,
+        "imageUrl": "http://picsum.photos/seed/AppleWatch/210/160",
+        "imageAlt": "Apple Watch"
+    },
+    {
+        "id": 7,
+        "name": "Citizen",
+        "rating": 2.5,
+        "price": 420,
+        "imageUrl": "http://picsum.photos/seed/Citizen/210/160",
+        "imageAlt": "Citizen"
+    },
+    {
+        "id": 8,
+        "name": "Tissot",
+        "rating": 4.5,
+        "price": 460,
+        "imageUrl": "http://picsum.photos/seed/Tissot/210/160",
+        "imageAlt": "Tissot"
+    }
+]
