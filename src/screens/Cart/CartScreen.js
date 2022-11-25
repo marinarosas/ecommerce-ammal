@@ -1,10 +1,18 @@
+import React from "react";
+import {MainCart, TitleCart} from './CartScreen.styled'
+
 function CartScreen() {
 
   return (
-    <div>
-      <h1>Cart Screen</h1>
-    </div>
-  );
-}
+    <MainCart>
+      <TitleCart>
+        <h1>CartScreen</h1>
+        <hr/>
+      </TitleCart>
+      <section>
+      <p>vou colocar algo</p>
+      </section>
+    </MainCart>
+)}
 
 export default CartScreen;
