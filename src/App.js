@@ -10,8 +10,15 @@ function App() {
   const goToProductsScreen = () => setActveScreen ("ProductsScreen")
   const goToCartScreen = () => setActveScreen ("CartScreen")
 
-  const addToCart = (newProduct) => {
-      const newCart = [...cart, newProduct]
+  const addToCart = (productToAdd) => {
+      const newCart = [...cart]
+
+      const productFound = newCart.find((productInCart)=>productInCart.id === productToAdd.id)
+
+      if (!productFound){
+        const newProduct = {...productToAdd, quantity: 1}
+        newCart.push(newProduct)
+      }
       setCart(newCart)
   }
   

@@ -5,7 +5,6 @@ export const MainCart = styled.main`
     min-height: 85vh;
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
 
     section{
         border: 2px solid purple;
@@ -13,7 +12,7 @@ export const MainCart = styled.main`
         flex-wrap: wrap;
         gap: 16px;
         margin-left: 19px;
-        min-height: 71vh;
+        margin-right: 19px;
     }
 `
 export const TitleCart = styled.div`

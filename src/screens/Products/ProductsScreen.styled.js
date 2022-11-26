@@ -5,14 +5,14 @@ export const Main = styled.main`
     min-height: 85vh;
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
-
+    
     section{
         border: 2px solid purple;
         display: flex;
         flex-wrap: wrap;
-        gap: 16px;
+        gap: 14px;
         margin-left: 19px;
+        margin-right: 19px;
     }
 `
 export const TitleSection = styled.div`

@@ -13,7 +13,11 @@ const priceFormatter = new Intl.NumberFormat('en-US', {
 // --> o segundo parametro - prop -> currency: 'BRL'
 
 const ProductCard = (props) => {
-const {product} = props
+const {product, 
+  addToCart,
+  isOnProductScreen,
+  isOnCartScreen
+} = props
 
   return (
     <ProductCardContainer>
@@ -24,10 +28,11 @@ const {product} = props
           </NameRating>
           <PriceButton>
             <span>{priceFormatter.format(product.price)}</span>
-            <button>+ Add to Cart</button>
+            {isOnProductScreen && <button onClick={()=>addToCart(product)} >+ Add to Cart</button>}
+            {isOnCartScreen && <span>{product.quantity}</span>}
           </PriceButton>
     </ProductCardContainer>
-  )
+  ) 
 }
 
 export default ProductCard
