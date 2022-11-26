@@ -29,3 +29,4 @@ export const PriceButton = styled.div`
         padding: 4px;
     }
 `
+

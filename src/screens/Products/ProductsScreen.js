@@ -2,7 +2,9 @@ import products from '../../assets/products.json'
 import ProductCard from '../../components/ProductCard/ProductCard';
 import { Main, TitleSection } from './ProductsScreen.styled';
 
-function ProductsScreen() {
+function ProductsScreen(props) {
+
+  const {addToCart} = props
 
   return (
     <Main>
@@ -15,7 +17,11 @@ function ProductsScreen() {
       // .filter((product)=> product.name.toLowerCase().includes("W".toLowerCase()))
       //todo o map tem que retornar uma key
       .map((product)=>(
-        <ProductCard key={product.id} product={product}/>
+        <ProductCard 
+        key={product.id} 
+        product={product} 
+        addToCart={addToCart}
+        isOnProductScreen = {true}/>
   ))}
       </section>
     </Main>
