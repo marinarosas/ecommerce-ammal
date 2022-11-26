@@ -1,22 +1,14 @@
 import React from 'react'
+import { priceFormatter } from '../../utils/priceFormatter'
 import { ProductCardContainer, NameRating, PriceButton } from './ProductCard.styled'
-
-const priceFormatter = new Intl.NumberFormat('en-US', {
-  style: 'currency',
-  currency: 'USD',
-  minimumFractionDigits: 0,
-  maximumFractionDigits: 0
-})
-
-//para usar real substituir:
-// --> o primeiro parametro por'pt-BR'
-// --> o segundo parametro - prop -> currency: 'BRL'
 
 const ProductCard = (props) => {
 const {product, 
   addToCart,
   isOnProductScreen,
-  isOnCartScreen
+  isOnCartScreen,
+  increaseQuantityInCart,
+  decreaseQuantityInCart
 } = props
 
   return (
@@ -28,8 +20,16 @@ const {product,
           </NameRating>
           <PriceButton>
             <span>{priceFormatter.format(product.price)}</span>
+            {isOnCartScreen && product.quantity > 1 && 
+              <button onClick={() => decreaseQuantityInCart(product)}>-</button>
+             }
+            {isOnCartScreen && 
+              <span>{product.quantity}</span>
+            }
+            {isOnCartScreen && 
+              <button onClick={() => increaseQuantityInCart(product)}>+</button>
+             }
             {isOnProductScreen && <button onClick={()=>addToCart(product)} >+ Add to Cart</button>}
-            {isOnCartScreen && <span>{product.quantity}</span>}
           </PriceButton>
     </ProductCardContainer>
   ) 
